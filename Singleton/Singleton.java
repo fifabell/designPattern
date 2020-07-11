@@ -1,11 +1,12 @@
 package Singleton;
 
-public class Singleton {
-    private static Singleton singleton = new Singleton();
-    private Singleton() {
-        System.out.println("Singleton Instance Created..");
+public class Singleton { 
+    private Singleton(){}
+    public static Singleton getInstance() { 
+        return LazyHolder.INSTANCE; 
+    } 
+    private static class LazyHolder {
+        private static final Singleton INSTANCE = new Singleton(); 
     }
-    public static Singleton getInstance() {
-        return singleton;
-    }
+
 }
