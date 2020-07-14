@@ -1,3 +1,7 @@
+// template Method Pattern은 override 생각하면 됨.
+// stratery Pattern은 interface를 통한 casting에 초점을 맞출 것.
+//  OOP 5대 원칙 정리 할 것.
+
 package Strategy;
 
 public class Main {
