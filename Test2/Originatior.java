@@ -48,7 +48,6 @@ class Caretaker {
         // We can request multiple mementos, and choose which one to roll back to.
         savedStates.add(originator.saveToMemento());
         originator.set("State4");
- 
-        originator.restoreFromMemento(savedStates.get(1));   
+        originator.restoreFromMemento(savedStates.get(0));
     }
 }
